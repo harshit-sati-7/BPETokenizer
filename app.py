@@ -21,6 +21,7 @@ text=st.text_area(
 if st.button("Tokenize"):
     if text.strip():
         val=tok.encode(text)
+        st.write("Characters in entered text: ",len(text))
         st.write("TOKEN USED: ",len(val))
         
 
